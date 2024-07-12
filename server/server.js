@@ -107,6 +107,20 @@ app.get("/feedback/:id", async (req, res) => {
     }
 });
 
+app.post("/feedback", async (req, res) => {
+    try {
+        const newFeedback = req.body;
+        const client = await MongoClient.connect(url);
+        const db = client.db(dbName);
+        const collection = db.collection(feedbackCollection);
+        const result = await collection.insertOne(newFeedback)
+        res.status(201).send(`{"_id":"${result.insertedId}"}`);
+    } catch (err) {
+        console.error("Error:", err);
+        res.status(500).send("Error inserting feedback");
+    }
+});
+
 app.put("/feedback/:id", async (req, res) => {
     try {
         const { id } = req.params;
@@ -130,6 +144,19 @@ app.put("/feedback/:id", async (req, res) => {
     }
 });
 
+app.get("/questions", async (req, res) => {
+    try {
+        const client = await MongoClient.connect(url);
+        const db = client.db(dbName);
+        const collection = db.collection(questionsCollection);
+        const result = await collection.find({}).toArray();
+        res.json(result);
+    } catch (err) {
+        console.error("Error:", err);
+        res.status(500).send("Error retrieving questions from mongo");
+    }
+});
+
 app.get("/questions/:id", async (req, res) => {
     try {
         const { id } = req.params;
@@ -141,6 +168,20 @@ app.get("/questions/:id", async (req, res) => {
     } catch (err) {
         console.error("Error:", err);
         res.status(500).send("Error retrieving question from mongo");
+    }
+});
+
+app.post("/questions", async (req, res) => {
+    try {
+        const newQuestion = req.body;
+        const client = await MongoClient.connect(url);
+        const db = client.db(dbName);
+        const collection = db.collection(questionsCollection);
+        const result = await collection.insertOne(newQuestion)
+        res.status(201).send(`{"_id":"${result.insertedId}"}`);
+    } catch (err) {
+        console.error("Error:", err);
+        res.status(500).send("Error inserting question");
     }
 });
 
