@@ -1,22 +1,48 @@
-import React from 'react'
+import React from 'react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 function Signup() {
     let [name, setName] = useState("");
     let [email, setEmail] = useState("");
-    let [password, setPasswrod] = useState("")
-    let [isManager, setIsManager] = useState(false)
-    let [managerEmail, setManagerEmail] = useState("")
+    let [password, setPasswrod] = useState("");
+    let [isManager, setIsManager] = useState(false);
+    let [managerEmail, setManagerEmail] = useState("");
     
 const handleCheckboxChange = (event) => {
     setIsManager(event.target.checked);
 };
 
-const handleSubmit = () => {
-    //handle registration here
-    console.log("user logged in")
-}
+const handleSubmit = async (e) => {
+  e.preventDefault();
+    const newUser = {
+      name: name,
+      email: email,
+      password: password,
+      isManager: isManager,
+      managerEmail: managerEmail
+    };
+    
+    try {
+      const response = await fetch(`http://localhost:3000/signup`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newUser)
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error posting new employee, status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log(data);
+      console.log("user logged in");
+    } catch(err){
+      console.error(err);
+    }
+};
 
   return (
     <div>
@@ -75,7 +101,7 @@ const handleSubmit = () => {
         </form>
         <p>Already have an account? <Link to="/">Login!</Link></p>
     </div>
-  )
+  );
 }
 
-export default Signup
+export default Signup;

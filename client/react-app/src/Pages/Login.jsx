@@ -1,12 +1,12 @@
-import React from 'react'
-import { useState } from 'react'
-import {Link} from 'react-router-dom'
-import Signup from './Signup'
+import React from 'react';
+import { useState } from 'react';
+import {Link} from 'react-router-dom';
+import Signup from './Signup';
 
 function Login() {
   
-  let [email, setEmail] = useState("")
-  let [password, setPassword] = useState("")
+  let [email, setEmail] = useState("");
+  let [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,7 +14,7 @@ function Login() {
     //handle login here
     console.log(email);
     console.log(password);
-  }
+  };
 
   return (
     <div>
@@ -45,7 +45,7 @@ function Login() {
 
       <p>Don't have an account? Signup <Link to="signup">here!</Link></p>
     </div>
-  )
+  );
 }
 
-export default Login
+export default Login;

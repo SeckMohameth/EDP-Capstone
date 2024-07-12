@@ -1,5 +1,5 @@
-import React from 'react'
-import FeedbackForm from '../Components/FeedbackForm'
+import React, { useState, useEffect } from 'react';
+import FeedbackForm from '../Components/FeedbackForm';
 
 function EmployeeHome() {
   return (
@@ -10,7 +10,7 @@ function EmployeeHome() {
 
       <h2>Past Submitted responses</h2>
     </div>
-  )
+  );
 }
 
-export default EmployeeHome
+export default EmployeeHome;
