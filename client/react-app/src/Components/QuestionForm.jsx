@@ -5,7 +5,30 @@ function QuestionFrom() {
 
   const handlesubmit = async (e) => {
     e.preventDefault()
+    console.log(question);
+
+    const newFeedback = {
+      content: question,
+      date: Date.now(),
+
+    }
+    // logic for feedback submission here
+  try {
+    let response = await fetch('http://localhost:3000/questions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({newFeedback}),
+    });
+    if (response.ok) {
+      console.log("question submitted");
+    }
+  } catch(error) {
+    console.error('Error:', error);
   }
+    
+} 
 
   return (
     <div>

@@ -36,6 +36,11 @@ function EmployeeHome() {
 
 
       <h2>Past Submitted responses</h2>
+      {/* {feedback.map((x) => (
+        <p key={x}>{x}</p>
+      ))} */}
+
+
     </div>
   );
 }

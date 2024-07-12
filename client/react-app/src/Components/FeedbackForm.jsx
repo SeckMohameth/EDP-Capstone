@@ -8,14 +8,19 @@ function FeedbackForm() {
         e.preventDefault()
         console.log(feedback);
 
+        const newFeedback = {
+          content: feedback,
+          date: Date.now(),
+
+        }
         // logic for feedback submission here
       try {
-        let response = await fetch('/api/feedback', {
+        let response = await fetch('http://localhost:3000/feedback', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({feedback: feedback}),
+          body: JSON.stringify({newFeedback}),
         });
         if (response.ok) {
           console.log("feedback submitted");
