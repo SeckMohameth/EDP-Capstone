@@ -4,25 +4,38 @@ function FeedbackForm() {
     let [feedback, setFeedback] = useState("")
     
 
-    const handlesubmit = (e) => {
+    const handlesubmit = async (e) => {
         e.preventDefault()
         console.log(feedback);
 
         // logic for feedback submission here
-
+      try {
+        let response = await fetch('/api/feedback', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({feedback: feedback}),
+        });
+        if (response.ok) {
+          console.log("feedback submitted");
+        }
+      } catch(error) {
+        console.error('Error:', error);
+      }
         
     } 
 
   return (
     <div>
         <form onSubmit={handlesubmit}>
-            <label>Submit a question or feedback</label><br/>
+            <label>Submit feedback</label><br/>
             <textarea 
             type='text' 
             name='postContent'
             rows={6}
             cols={50}
-            placeholder='I have a question regarding the following...'
+            placeholder='I have feedback regarding the following...'
             value={feedback}
             onChange={(e => setFeedback(e.target.value))}
             /><br/>
