@@ -1,9 +1,11 @@
-
 import React, { useState, useEffect } from 'react';
 import FeedbackForm from '../Components/FeedbackForm';
 import QuestionFrom from '../Components/QuestionForm';
+import { useAuth } from '../hooks/AuthContext';
 
 function EmployeeHome() {
+  const { user } = useAuth();
+
   const [feedback, setFeedback] = useState([]);
   const [questions, setQuestions] = useState([]);
   let [currentForm, setCurrentForm] = useState('feedback');

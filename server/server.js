@@ -16,6 +16,7 @@ app.use(cors());
 app.use(express.json());
 const PORT = 3000;
 
+// Fetch all employees
 app.get("/employee", async (req, res) => {
     try {
         const client = await MongoClient.connect(url);
@@ -29,20 +30,22 @@ app.get("/employee", async (req, res) => {
     }
 });
 
-app.get("/employee/:id", async (req, res) => {
+// Fetch employee by email
+app.get("/employee/:email", async (req, res) => {
     try {
-        const { id } = req.params;
+        const { email } = req.params;
         const client = await MongoClient.connect(url);
         const db = client.db(dbName);
         const collection = db.collection(employeeCollection);
-        const result = await collection.findOne({id : id});
+        const result = await collection.findOne({ email: email });
         res.json(result);
     } catch (err) {
         console.error("Error:", err);
-        res.status(500).send("Error retrieving employees from mongo");
+        res.status(500).send("Error retrieving employee from mongo");
     }
 });
 
+// Post a new employee
 app.post("/signup", async (req, res) => {
     try {
         const newUser = req.body;
@@ -57,11 +60,12 @@ app.post("/signup", async (req, res) => {
     }
 });
 
-app.put("/employee/:id", async (req, res) => {
+// Update existing employee by email
+app.put("/employee/:email", async (req, res) => {
     try {
-        const { id } = req.params;
+        const { email } = req.params;
         const newData = req.body;
-        const filter = { id : id};
+        const filter = { email: email };
         const updateDoc = {
             $set: newData
         }
@@ -80,6 +84,7 @@ app.put("/employee/:id", async (req, res) => {
     }
 });
 
+// Fetch all feedback
 app.get("/feedback", async (req, res) => {
     try {
         const client = await MongoClient.connect(url);
@@ -93,13 +98,14 @@ app.get("/feedback", async (req, res) => {
     }
 });
 
+// Fetch feedback by id 
 app.get("/feedback/:id", async (req, res) => {
     try {
         const { id } = req.params;
         const client = await MongoClient.connect(url);
         const db = client.db(dbName);
         const collection = db.collection(feedbackCollection);
-        const result = await collection.find({managerID : id}).toArray();
+        const result = await collection.find({ managerID: id }).toArray();
         res.json(result);
     } catch (err) {
         console.error("Error:", err);
@@ -107,6 +113,7 @@ app.get("/feedback/:id", async (req, res) => {
     }
 });
 
+// Post new feedback
 app.post("/feedback", async (req, res) => {
     try {
         const newFeedback = req.body;
@@ -121,11 +128,12 @@ app.post("/feedback", async (req, res) => {
     }
 });
 
+// Update existing feedback by id
 app.put("/feedback/:id", async (req, res) => {
     try {
         const { id } = req.params;
         const newData = req.body;
-        const filter = { id : id};
+        const filter = { id: id };
         const updateDoc = {
             $set: newData
         }
@@ -144,6 +152,7 @@ app.put("/feedback/:id", async (req, res) => {
     }
 });
 
+// Fetch all questions
 app.get("/questions", async (req, res) => {
     try {
         const client = await MongoClient.connect(url);
@@ -157,13 +166,14 @@ app.get("/questions", async (req, res) => {
     }
 });
 
+// Fetch questions by id
 app.get("/questions/:id", async (req, res) => {
     try {
         const { id } = req.params;
         const client = await MongoClient.connect(url);
         const db = client.db(dbName);
         const collection = db.collection(questionsCollection);
-        const result = await collection.find({employeeID : id}).toArray();
+        const result = await collection.find({ employeeID: id }).toArray();
         res.json(result);
     } catch (err) {
         console.error("Error:", err);
@@ -171,6 +181,7 @@ app.get("/questions/:id", async (req, res) => {
     }
 });
 
+// Post new question
 app.post("/questions", async (req, res) => {
     try {
         const newQuestion = req.body;
@@ -185,11 +196,12 @@ app.post("/questions", async (req, res) => {
     }
 });
 
+// Update questions by id
 app.put("/questions/:id", async (req, res) => {
     try {
         const { id } = req.params;
         const newData = req.body;
-        const filter = { id : id};
+        const filter = { id: id };
         const updateDoc = {
             $set: newData
         }
@@ -205,6 +217,26 @@ app.put("/questions/:id", async (req, res) => {
     } catch (err) {
         console.error("Error:", err);
         res.status(500).send("Error updating question");
+    }
+});
+
+// Login route
+app.post('/login', async (req, res) => {
+    try {
+        const { email, password } = req.body;
+        const filter = { email: email, password: password };
+        const client = await MongoClient.connect(url);
+        const db = client.db(dbName);
+        const collection = db.collection(employeeCollection);
+        const result = await collection.findOne(filter);
+        if (result.email) {
+            res.status(200).json({ user: result });
+        } else {
+            res.status(401).json({ message: 'Authentication failed' });
+        }
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Internal server error' });
     }
 });
 
