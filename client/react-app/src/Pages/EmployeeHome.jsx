@@ -1,13 +1,27 @@
+
 import React, { useState } from 'react'
 import FeedbackForm from '../Components/FeedbackForm'
 import QuestionFrom from '../Components/QuestionForm'
 
 function EmployeeHome() {
   let [currentForm, setCurrentForm] = useState('feedback')
+    const [feedback, setFeedback] = useState([]);
+
 
   const handleToggle = (formname) => {
     setCurrentForm(formname)
   }
+
+  const fetchFeedback = () => {
+    fetch("http://localhost:3000/feedback")
+      .then((res) => res.json())
+      .then((feedback) => {
+        setFeedback(feedback);
+      });
+    console.log(feedback);
+  };
+  useEffect(fetchFeedback, []);
+
 
   return (
     <div>
@@ -23,7 +37,7 @@ function EmployeeHome() {
 
       <h2>Past Submitted responses</h2>
     </div>
-  )
+  );
 }
 
-export default EmployeeHome
+export default EmployeeHome;

@@ -1,5 +1,5 @@
-import React from 'react'
-import FeedbackCard from '../Components/FeedbackCard'
+import React from 'react';
+import FeedbackCard from '../Components/FeedbackCard';
 
 function ManagerHome() {
   return (
@@ -10,7 +10,7 @@ function ManagerHome() {
       {/* Show submitted feedback here as a list*/}
       <FeedbackCard/>
     </div>
-  )
+  );
 }
 
-export default ManagerHome
+export default ManagerHome;
