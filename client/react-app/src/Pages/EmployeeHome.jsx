@@ -1,9 +1,16 @@
+
 import React, { useState, useEffect } from 'react';
 import FeedbackForm from '../Components/FeedbackForm';
+import QuestionFrom from '../Components/QuestionForm';
 
 function EmployeeHome() {
   const [feedback, setFeedback] = useState([]);
   const [questions, setQuestions] = useState([]);
+  let [currentForm, setCurrentForm] = useState('feedback');
+
+  const handleToggle = (formname) => {
+    setCurrentForm(formname)
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -30,11 +37,17 @@ function EmployeeHome() {
     fetchData();
   }, []);
 
+
   return (
     <div>
       <h1>Employee Dashboard</h1>
       <h3>Your manager is: </h3>
-      <FeedbackForm fb={feedback} qns={questions}/>
+
+      <button onClick={() => handleToggle('feedback')}>Feedback</button>
+      <button onClick={() => handleToggle('question')}>Question</button>
+
+      {currentForm === 'feedback' && <FeedbackForm/>}
+      {currentForm === 'question' && <QuestionFrom/>}
 
       <h2>Past Submitted responses</h2>
     </div>
