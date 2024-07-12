@@ -14,13 +14,27 @@ app.use(cors());
 app.use(express.json());
 const PORT = 3000;
 
-app.get('/employees', async (req, res) => {
+app.get("/employees", async (req, res) => {
     try {
         const client = await MongoClient.connect(url);
         const db = client.db(dbName);
         const collection = db.collection(collectionName);
         const employees = await collection.find({}).toArray();
         res.json(employees);
+    } catch (err) {
+        console.error("Error:", err);
+        res.status(500).send("Error retrieving employees from mongo");
+    }
+});
+
+app.get("/employees/:id", async (req, res) => {
+    try {
+        const { id } = req.params;
+        const client = await MongoClient.connect(url);
+        const db = client.db(dbName);
+        const collection = db.collection(collectionName);
+        const result = await collection.findOne({id : id});
+        res.json(result);
     } catch (err) {
         console.error("Error:", err);
         res.status(500).send("Error retrieving employees from mongo");
@@ -38,6 +52,29 @@ app.post("/signup", async (req, res) => {
     } catch (err) {
         console.error("Error:", err);
         res.status(500).send("Error posting new user to mongo");
+    }
+});
+
+app.put("/employees/:id", async (req, res) => {
+    try {
+        const { id } = req.params;
+        const newData = req.body;
+        const filter = { id : id};
+        const updateDoc = {
+            $set: newData
+        }
+        const client = await MongoClient.connect(url);
+        const db = client.db(dbName);
+        const collection = db.collection(collectionName);
+        const result = await collection.updateOne(filter, updateDoc)
+        res.status(200).send({
+            status: "success",
+            data: newData,
+            message: "User updated successfully."
+        });
+    } catch (err) {
+        console.error("Error:", err);
+        res.status(500).send("Error updating employee");
     }
 });
 
