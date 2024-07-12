@@ -1,0 +1,25 @@
+Employee data structure:
+{
+	_id:
+	name:
+	email:
+	password:
+	isManager:
+	managerEmail:
+}
+
+Feedback data structure:
+{
+	_id:
+	managerEmail:
+	feedbackString:
+	responsesList:
+}
+
+Questions data structure:
+{
+	_id:
+	employeeEmail:
+	questionString:
+	answersList:
+}
