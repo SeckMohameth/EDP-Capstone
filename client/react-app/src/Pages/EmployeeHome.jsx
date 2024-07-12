@@ -1,8 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import FeedbackForm from '../Components/FeedbackForm';
+
+import React, { useState } from 'react'
+import FeedbackForm from '../Components/FeedbackForm'
+import QuestionFrom from '../Components/QuestionForm'
 
 function EmployeeHome() {
-  const [feedback, setFeedback] = useState([]);
+  let [currentForm, setCurrentForm] = useState('feedback')
+    const [feedback, setFeedback] = useState([]);
+
+
+  const handleToggle = (formname) => {
+    setCurrentForm(formname)
+  }
 
   const fetchFeedback = () => {
     fetch("http://localhost:3000/feedback")
@@ -14,11 +22,18 @@ function EmployeeHome() {
   };
   useEffect(fetchFeedback, []);
 
+
   return (
     <div>
       <h1>Employee Dashboard</h1>
       <h3>Your manager is: </h3>
-      <FeedbackForm />
+
+      <button onClick={() => handleToggle('feedback')}>Feedback</button>
+      <button onClick={() => handleToggle('question')}>Question</button>
+
+      {currentForm === 'feedback' && <FeedbackForm/>}
+      {currentForm === 'question' && <QuestionFrom/>}
+
 
       <h2>Past Submitted responses</h2>
     </div>
