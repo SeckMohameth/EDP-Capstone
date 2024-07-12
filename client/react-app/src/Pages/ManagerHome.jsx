@@ -40,8 +40,8 @@ function ManagerHome() {
       <h1>Manager Dashboard</h1>
       
       <p>Select which submissions to view</p>
-      <button onClick={() => currentCategory('feedback')}>Feedback</button>
-      <button onClick={() => currentCategory('question')}>Question</button>
+      <button onClick={() => handleToggle('feedback')}>Feedback</button>
+      <button onClick={() => handleToggle('question')}>Question</button>
 
 
       {/* Show submitted feedback here as a list*/}
