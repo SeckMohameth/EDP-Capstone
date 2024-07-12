@@ -1,0 +1,8 @@
+.card {
+    border: black solid 1px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: end;
+}
