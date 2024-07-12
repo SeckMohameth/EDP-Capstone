@@ -80,6 +80,19 @@ app.put("/employee/:id", async (req, res) => {
     }
 });
 
+app.get("/feedback", async (req, res) => {
+    try {
+        const client = await MongoClient.connect(url);
+        const db = client.db(dbName);
+        const collection = db.collection(feedbackCollection);
+        const result = await collection.find({}).toArray();
+        res.json(result);
+    } catch (err) {
+        console.error("Error:", err);
+        res.status(500).send("Error retrieving feedback from mongo");
+    }
+});
+
 app.get("/feedback/:id", async (req, res) => {
     try {
         const { id } = req.params;
