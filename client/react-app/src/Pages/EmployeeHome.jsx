@@ -1,26 +1,41 @@
 
-import React, { useState, useEffect } from 'react'
-import FeedbackForm from '../Components/FeedbackForm'
-import QuestionFrom from '../Components/QuestionForm'
+import React, { useState, useEffect } from 'react';
+import FeedbackForm from '../Components/FeedbackForm';
+import QuestionFrom from '../Components/QuestionForm';
 
 function EmployeeHome() {
-  let [currentForm, setCurrentForm] = useState('feedback')
-    const [feedback, setFeedback] = useState([]);
-
+  const [feedback, setFeedback] = useState([]);
+  const [questions, setQuestions] = useState([]);
+  let [currentForm, setCurrentForm] = useState('feedback');
 
   const handleToggle = (formname) => {
     setCurrentForm(formname)
-  }
-
-  const fetchFeedback = () => {
-    fetch("http://localhost:3000/feedback")
-      .then((res) => res.json())
-      .then((feedback) => {
-        setFeedback(feedback);
-      });
-    console.log(feedback);
   };
-  useEffect(fetchFeedback, []);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const feedbackResponse = await fetch("http://localhost:3000/feedback");
+        if (!feedbackResponse.ok) {
+          throw new Error("Feedback could not be fetched")
+        }
+        const feedbackResponseJson = await feedbackResponse.json();
+        setFeedback(feedbackResponseJson);
+        console.log(feedback);
+
+        const questionsResponse = await fetch("http://localhost:3000/questions");
+        if (!questionsResponse.ok) {
+          throw new Error("Questions could not be fetched")
+        }
+        const questionsResponseJson = await questionsResponse.json();
+        setQuestions(questionsResponseJson);
+        console.log(questions);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    fetchData();
+  }, []);
 
 
   return (
@@ -33,7 +48,6 @@ function EmployeeHome() {
 
       {currentForm === 'feedback' && <FeedbackForm/>}
       {currentForm === 'question' && <QuestionFrom/>}
-
 
       <h2>Past Submitted responses</h2>
       {/* {feedback.map((x) => (
