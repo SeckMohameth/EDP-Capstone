@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import FeedbackForm from '../Components/FeedbackForm';
 import QuestionFrom from '../Components/QuestionForm';
+import FeedbackCard from '../Components/FeedbackCard';
 
 function EmployeeHome() {
   const [feedback, setFeedback] = useState([]);
@@ -50,9 +51,13 @@ function EmployeeHome() {
       {currentForm === 'question' && <QuestionFrom/>}
 
       <h2>Past Submitted responses</h2>
-      {/* {feedback.map((x) => (
-        <p key={x}>{x}</p>
-      ))} */}
+      {feedback.map((feedback) => (
+        <FeedbackCard
+          key={feedback._id}
+          content={feedback.content}
+          date={feedback.date}
+        />
+      ))}
 
 
     </div>
