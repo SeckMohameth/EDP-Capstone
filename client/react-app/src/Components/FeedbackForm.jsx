@@ -10,7 +10,7 @@ function FeedbackForm() {
 
         // logic for feedback submission here
       try {
-        let response = await fetch('/api/feedback', {
+        let response = await fetch('/feedback', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
