@@ -198,5 +198,1358 @@
     {
       "content": "This product is not at all as described on the website.",
       "sentiment": "negative"
+    },
+    {
+      "content": "I absolutely love this product!",
+      "sentiment": "positive"
+    },
+    {
+      "content": "It didn't work as expected and I'm very disappointed.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Fantastic quality and easy to use.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Terrible customer service and poor quality.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Exceeded all my expectations.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Would not buy this product again.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "High quality and great performance.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "This was a complete waste of money.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I'm very satisfied with my purchase.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product failed after a short period of use.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Amazing product! Highly recommended.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "It's overpriced and underwhelming.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This is my go-to product from now on.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product was broken when it arrived.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Very pleased with the purchase.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "It didn't last as long as I expected.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Exceptional product and fast delivery.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Not worth the price I paid.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I can't imagine my life without it.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product is unreliable and broke quickly.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Excellent product and superb quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "I regret this purchase.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "The product is fantastic, works as advertised.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Poor quality and disappointing service.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "The best product I've ever bought.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "I had a bad experience with this product.",
+      "sentiment": "negative"
+    },
+   
+    {
+      "content": "The product quality is excellent and very durable.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "I am very unhappy with this purchase, it did not meet my expectations.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "The customer service was incredibly helpful and responsive.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "This is by far the worst product I have ever bought.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am delighted with how well this product performs.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product arrived broken and the company refused to refund me.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I will definitely recommend this product to my friends.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The worst experience with an online purchase I've ever had.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product exceeded all my expectations.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Very disappointed with the poor craftsmanship.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Fantastic product with great features.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product stopped working after just a few days.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great value for the money.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "I feel like I wasted my money on this product.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Superb customer service and high-quality product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "I was very disappointed with the quality of this item.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product works exactly as advertised.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't live up to its promises.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am extremely satisfied with my purchase.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product arrived late and in poor condition.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Excellent build quality and design.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product malfunctioned within the first week.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I couldn't be happier with this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Not worth the money at all.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Highly functional and easy to use.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product did not meet my expectations.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Top-notch product, would buy again.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Very poor quality and performance.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "The best purchase I have made in a long time.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "I'm very dissatisfied with this product.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great product, excellent value for money.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work as described.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very happy with this product's performance.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product arrived defective and unusable.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Amazing product, highly recommend it.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "I regret buying this product.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "The product quality is outstanding.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Very poor customer service experience.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product has made my life so much easier.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product was not as advertised.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Excellent product and quick delivery.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Very disappointed with the purchase.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "The product is fantastic and works perfectly.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product quality is very poor.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very satisfied with this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product stopped working after a few uses.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is well worth the price.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product is a total waste of money.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Fantastic product and great customer support.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product arrived in terrible condition.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Highly recommend this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke after a few uses.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am extremely happy with my purchase.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't last long at all.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "The best product I have ever bought.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product was very disappointing.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great product, highly recommend it.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product quality is very disappointing.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love this product and use it every day.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product did not meet my expectations at all.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Amazing product, well worth the money.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke after the first use.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is very well made.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product did not work as described.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very pleased with this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product quality is very poor.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very satisfied with this purchase.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product stopped working after a short time.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is fantastic, highly recommend it.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product was a total waste of money.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very happy with the quality of this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product did not meet my expectations.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very pleased with my purchase.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product quality is very disappointing.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am extremely satisfied with this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product stopped working after a short period.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love this product, it's fantastic.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product quality is very poor.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very happy with my purchase.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke after a few uses.",
+      "sentiment": "negative"
+    },
+  
+    {
+      "content": "The packaging was beautiful and the product worked as expected.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work at all, very disappointing.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am really happy with my purchase, it's very useful.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product stopped working after a few days, not worth it.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great product, exactly what I was looking for.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Very poor quality, broke almost immediately.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love how easy it is to use this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product is very flimsy and cheap.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Exceeded my expectations in every way.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Waste of money, it didn't do what it promised.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Fantastic quality and arrived quickly.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The instructions were unclear and it didn't work properly.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am extremely satisfied with the performance of this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product was defective and didn't function as advertised.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Amazing product, would definitely recommend.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Poor quality, not worth the price.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product has greatly improved my daily routine.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke after just one use.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love this product, it works perfectly.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Not satisfied, the product didn't work as expected.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "The product is very reliable and high quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Terrible product, I want a refund.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is very user-friendly and efficient.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product was damaged when it arrived.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very happy with my purchase, it works great.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't live up to the hype.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Excellent product, will definitely buy again.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The quality was not as good as expected.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Very satisfied with this product, highly recommend.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and customer service was unhelpful.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very pleased with the quality of this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product arrived late and didn't meet my expectations.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great value for the price, very happy.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product was missing parts and couldn't be used.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is fantastic, I use it every day.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product is overpriced for its quality.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very impressed with this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work as described, very disappointing.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Amazing product, great quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product arrived broken and the company didn't help.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love this product, it has made my life so much easier.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product stopped working after a week.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Excellent product, very high quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and was a waste of money.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is fantastic, highly recommend.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke very quickly, not worth it.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very satisfied with my purchase, great quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and the company didn't help.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great product, works as expected.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Very disappointed, the product didn't work at all.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love this product, it's very high quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product arrived broken and wasn't worth the money.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is fantastic, very satisfied.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke after a short time.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great product, very reliable.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work as advertised.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very happy with the quality of this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product was defective and didn't work.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Excellent product, works perfectly.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't meet my expectations.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love this product, it works great.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product arrived late and was broken.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is very high quality and works well.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and the company was unhelpful.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great product, very happy with it.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke after a few uses, very disappointing.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very satisfied with this product, it's great.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and I want a refund.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Excellent product, would buy again.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product quality was not as expected.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love this product, it's fantastic.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and was a waste of money.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is amazing, very high quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke very quickly, not worth it.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very happy with my purchase, great quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and the company didn't help.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great product, works as expected.",
+      "sentiment": "positive"
+    },
+ 
+    {
+      "content": "The packaging was beautiful and the product worked as expected.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work at all, very disappointing.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am really happy with my purchase, it's very useful.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product stopped working after a few days, not worth it.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great product, exactly what I was looking for.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Very poor quality, broke almost immediately.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love how easy it is to use this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product is very flimsy and cheap.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Exceeded my expectations in every way.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Waste of money, it didn't do what it promised.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Fantastic quality and arrived quickly.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The instructions were unclear and it didn't work properly.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am extremely satisfied with the performance of this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product was defective and didn't function as advertised.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Amazing product, would definitely recommend.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Poor quality, not worth the price.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product has greatly improved my daily routine.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke after just one use.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love this product, it works perfectly.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Not satisfied, the product didn't work as expected.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "The product is very reliable and high quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Terrible product, I want a refund.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is very user-friendly and efficient.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product was damaged when it arrived.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very happy with my purchase, it works great.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't live up to the hype.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Excellent product, will definitely buy again.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The quality was not as good as expected.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Very satisfied with this product, highly recommend.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and customer service was unhelpful.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very pleased with the quality of this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product arrived late and didn't meet my expectations.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great value for the price, very happy.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product was missing parts and couldn't be used.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is fantastic, I use it every day.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product is overpriced for its quality.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very impressed with this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work as described, very disappointing.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Amazing product, great quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product arrived broken and the company didn't help.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love this product, it has made my life so much easier.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product stopped working after a week.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Excellent product, very high quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and was a waste of money.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is fantastic, highly recommend.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke very quickly, not worth it.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very satisfied with my purchase, great quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and the company didn't help.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great product, works as expected.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Very disappointed, the product didn't work at all.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love this product, it's very high quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product arrived broken and wasn't worth the money.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is fantastic, very satisfied.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke after a short time.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great product, very reliable.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work as advertised.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very happy with the quality of this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product was defective and didn't work.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Excellent product, works perfectly.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't meet my expectations.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love this product, it works great.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product arrived late and was broken.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is very high quality and works well.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and the company was unhelpful.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great product, very happy with it.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke after a few uses, very disappointing.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very satisfied with this product, it's great.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and I want a refund.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Excellent product, would buy again.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product quality was not as expected.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love this product, it's fantastic.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and was a waste of money.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is amazing, very high quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke very quickly, not worth it.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very happy with my purchase, great quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and the company didn't help.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great product, works as expected.",
+      "sentiment": "positive"
+    },
+
+    {
+      "content": "The packaging was beautiful and the product worked as expected.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work at all, very disappointing.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am really happy with my purchase, it's very useful.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product stopped working after a few days, not worth it.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great product, exactly what I was looking for.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Very poor quality, broke almost immediately.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love how easy it is to use this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product is very flimsy and cheap.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Exceeded my expectations in every way.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Waste of money, it didn't do what it promised.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Fantastic quality and arrived quickly.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The instructions were unclear and it didn't work properly.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am extremely satisfied with the performance of this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product was defective and didn't function as advertised.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Amazing product, would definitely recommend.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Poor quality, not worth the price.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product has greatly improved my daily routine.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke after just one use.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love this product, it works perfectly.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Not satisfied, the product didn't work as expected.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "The product is very reliable and high quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Terrible product, I want a refund.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is very user-friendly and efficient.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product was damaged when it arrived.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very happy with my purchase, it works great.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't live up to the hype.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Excellent product, will definitely buy again.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The quality was not as good as expected.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Very satisfied with this product, highly recommend.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and customer service was unhelpful.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very pleased with the quality of this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product arrived late and didn't meet my expectations.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great value for the price, very happy.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product was missing parts and couldn't be used.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is fantastic, I use it every day.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product is overpriced for its quality.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very impressed with this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work as described, very disappointing.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Amazing product, great quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product arrived broken and the company didn't help.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love this product, it has made my life so much easier.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product stopped working after a week.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Excellent product, very high quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and was a waste of money.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is fantastic, highly recommend.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke very quickly, not worth it.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very satisfied with my purchase, great quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and the company didn't help.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great product, works as expected.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "Very disappointed, the product didn't work at all.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love this product, it's very high quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product arrived broken and wasn't worth the money.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is fantastic, very satisfied.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke after a short time.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great product, very reliable.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work as advertised.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very happy with the quality of this product.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product was defective and didn't work.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Excellent product, works perfectly.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't meet my expectations.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love this product, it works great.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product arrived late and was broken.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is very high quality and works well.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and the company was unhelpful.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great product, very happy with it.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke after a few uses, very disappointing.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very satisfied with this product, it's great.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and I want a refund.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Excellent product, would buy again.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product quality was not as expected.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I love this product, it's fantastic.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and was a waste of money.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "This product is amazing, very high quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product broke very quickly, not worth it.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "I am very happy with my purchase, great quality.",
+      "sentiment": "positive"
+    },
+    {
+      "content": "The product didn't work and the company didn't help.",
+      "sentiment": "negative"
+    },
+    {
+      "content": "Great product, works as expected.",
+      "sentiment": "positive"
     }
-  ]
+  
+]
