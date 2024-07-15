@@ -1550,6 +1550,1254 @@
     {
       "content": "Great product, works as expected.",
       "sentiment": "positive"
-    }
+    },
+        {
+          "content": "The meeting today was very productive and insightful.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The presentation lacked detail and was hard to follow.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the effort put into organizing the event.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "Communication could have been clearer in today's discussion.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The training session was very informative and engaging.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There were too many technical issues during the webinar.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I found the workshop extremely helpful for my role.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The feedback session felt rushed and incomplete.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The team collaboration was excellent on this project.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The project timeline was unrealistic and caused stress.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The leadership displayed today was inspiring and motivating.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The meeting lacked direction and clear objectives.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the quick response to my query.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a lack of follow-up on the issues discussed.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The report was thorough and very well-prepared.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The analysis provided was superficial and unconvincing.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The customer support team was very helpful and patient.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "I felt the support team was unresponsive and dismissive.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The website is user-friendly and easy to navigate.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The website is confusing and difficult to use.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The updates made to the system are very beneficial.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The recent changes to the system have caused many issues.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I enjoyed the interactive elements of the training module.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The training module was dull and unengaging.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The event was well-organized and enjoyable.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The event was chaotic and poorly managed.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the transparency in the communication.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The communication was vague and left many questions unanswered.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The support provided was exceptional and timely.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The support was slow and not very helpful.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The collaborative effort on this project was outstanding.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a noticeable lack of teamwork on this project.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The creative approach taken was very refreshing.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The approach taken was outdated and uninspired.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The process improvements have made a significant difference.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The new process is cumbersome and inefficient.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The initiative shown by the team was commendable.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a distinct lack of initiative from the team.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The presentation was engaging and very informative.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The presentation was boring and lacked useful information.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the detailed feedback provided.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The feedback given was too vague to be useful.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The team showed great resilience and adaptability.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The team struggled to adapt to the new changes.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The customer service experience was very pleasant.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The customer service experience was frustrating and unhelpful.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The feedback received was constructive and valuable.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The feedback was overly critical and not helpful.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The level of professionalism was very high.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a noticeable lack of professionalism.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The training materials were well-prepared and comprehensive.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The training materials were incomplete and confusing.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The project exceeded all expectations.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The project fell short of expectations.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the extra effort put in by the team.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a lack of effort and commitment.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The support resources provided were very helpful.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The support resources were inadequate and hard to understand.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The leadership demonstrated was inspiring.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The leadership was lacking in direction and vision.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The innovation shown was very impressive.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The approach was too traditional and lacked innovation.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The collaboration on this project was excellent.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a lack of collaboration among team members.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The solution provided was effective and efficient.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The solution was ineffective and inefficient.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The approach taken was very strategic and well-planned.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The planning was poor and lacked strategic direction.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The initiative was very well-received and successful.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The initiative failed to meet its objectives.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The new strategy has proven to be very effective.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The new strategy has not been effective.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The feedback provided was very actionable.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The feedback provided was not actionable.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The overall experience was very positive and rewarding.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The overall experience was negative and frustrating.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The report provided clear and useful insights.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The report lacked clarity and useful information.",
+          "sentiment": "negative"
+        },
+    
+        {
+          "content": "The meeting today was very productive and insightful.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The presentation lacked detail and was hard to follow.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the effort put into organizing the event.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "Communication could have been clearer in today's discussion.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The training session was very informative and engaging.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There were too many technical issues during the webinar.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I found the workshop extremely helpful for my role.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The feedback session felt rushed and incomplete.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The team collaboration was excellent on this project.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The project timeline was unrealistic and caused stress.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The leadership displayed today was inspiring and motivating.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The meeting lacked direction and clear objectives.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the quick response to my query.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a lack of follow-up on the issues discussed.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The report was thorough and very well-prepared.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The analysis provided was superficial and unconvincing.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The customer support team was very helpful and patient.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "I felt the support team was unresponsive and dismissive.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The website is user-friendly and easy to navigate.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The website is confusing and difficult to use.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The updates made to the system are very beneficial.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The recent changes to the system have caused many issues.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I enjoyed the interactive elements of the training module.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The training module was dull and unengaging.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The event was well-organized and enjoyable.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The event was chaotic and poorly managed.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the transparency in the communication.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The communication was vague and left many questions unanswered.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The support provided was exceptional and timely.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The support was slow and not very helpful.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The collaborative effort on this project was outstanding.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a noticeable lack of teamwork on this project.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The creative approach taken was very refreshing.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The approach taken was outdated and uninspired.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The process improvements have made a significant difference.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The new process is cumbersome and inefficient.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The initiative shown by the team was commendable.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a distinct lack of initiative from the team.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The presentation was engaging and very informative.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The presentation was boring and lacked useful information.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the detailed feedback provided.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The feedback given was too vague to be useful.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The team showed great resilience and adaptability.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The team struggled to adapt to the new changes.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The customer service experience was very pleasant.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The customer service experience was frustrating and unhelpful.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The feedback received was constructive and valuable.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The feedback was overly critical and not helpful.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The level of professionalism was very high.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a noticeable lack of professionalism.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The training materials were well-prepared and comprehensive.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The training materials were incomplete and confusing.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The project exceeded all expectations.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The project fell short of expectations.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the extra effort put in by the team.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a lack of effort and commitment.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The support resources provided were very helpful.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The support resources were inadequate and hard to understand.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The leadership demonstrated was inspiring.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The leadership was lacking in direction and vision.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The innovation shown was very impressive.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The approach was too traditional and lacked innovation.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The collaboration on this project was excellent.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a lack of collaboration among team members.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The solution provided was effective and efficient.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The solution was ineffective and inefficient.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The approach taken was very strategic and well-planned.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The planning was poor and lacked strategic direction.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The initiative was very well-received and successful.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The initiative failed to meet its objectives.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The new strategy has proven to be very effective.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The new strategy has not been effective.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The feedback provided was very actionable.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The feedback provided was not actionable.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The overall experience was very positive and rewarding.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The overall experience was negative and frustrating.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The report provided clear and useful insights.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The report lacked clarity and useful information.",
+          "sentiment": "negative"
+        },
+        
+        {
+          "content": "The meeting today was very productive and insightful.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The presentation lacked detail and was hard to follow.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the effort put into organizing the event.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "Communication could have been clearer in today's discussion.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The training session was very informative and engaging.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There were too many technical issues during the webinar.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I found the workshop extremely helpful for my role.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The feedback session felt rushed and incomplete.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The team collaboration was excellent on this project.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The project timeline was unrealistic and caused stress.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The leadership displayed today was inspiring and motivating.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The meeting lacked direction and clear objectives.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the quick response to my query.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a lack of follow-up on the issues discussed.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The report was thorough and very well-prepared.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The analysis provided was superficial and unconvincing.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The customer support team was very helpful and patient.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "I felt the support team was unresponsive and dismissive.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The website is user-friendly and easy to navigate.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The website is confusing and difficult to use.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The updates made to the system are very beneficial.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The recent changes to the system have caused many issues.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I enjoyed the interactive elements of the training module.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The training module was dull and unengaging.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The event was well-organized and enjoyable.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The event was chaotic and poorly managed.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the transparency in the communication.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The communication was vague and left many questions unanswered.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The support provided was exceptional and timely.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The support was slow and not very helpful.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The collaborative effort on this project was outstanding.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a noticeable lack of teamwork on this project.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The creative approach taken was very refreshing.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The approach taken was outdated and uninspired.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The process improvements have made a significant difference.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The new process is cumbersome and inefficient.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The initiative shown by the team was commendable.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a distinct lack of initiative from the team.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The presentation was engaging and very informative.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The presentation was boring and lacked useful information.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the detailed feedback provided.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The feedback given was too vague to be useful.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The team showed great resilience and adaptability.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The team struggled to adapt to the new changes.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The customer service experience was very pleasant.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The customer service experience was frustrating and unhelpful.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The feedback received was constructive and valuable.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The feedback was overly critical and not helpful.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The level of professionalism was very high.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a noticeable lack of professionalism.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The training materials were well-prepared and comprehensive.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The training materials were incomplete and confusing.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The project exceeded all expectations.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The project fell short of expectations.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the extra effort put in by the team.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a lack of effort and commitment.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The support resources provided were very helpful.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The support resources were inadequate and hard to understand.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The leadership demonstrated was inspiring.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The leadership was lacking in direction and vision.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The innovation shown was very impressive.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The approach was too traditional and lacked innovation.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The collaboration on this project was excellent.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a lack of collaboration among team members.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The solution provided was effective and efficient.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The solution was ineffective and inefficient.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The approach taken was very strategic and well-planned.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The planning was poor and lacked strategic direction.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The initiative was very well-received and successful.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The initiative failed to meet its objectives.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The new strategy has proven to be very effective.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The new strategy has not been effective.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The feedback provided was very actionable.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The feedback provided was not actionable.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The overall experience was very positive and rewarding.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The overall experience was negative and frustrating.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The report provided clear and useful insights.",
+          "sentiment": "positive"
+        },
+   
+        {
+          "content": "The meeting today was very productive and insightful.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The presentation lacked detail and was hard to follow.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the effort put into organizing the event.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "Communication could have been clearer in today's discussion.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The training session was very informative and engaging.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There were too many technical issues during the webinar.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I found the workshop extremely helpful for my role.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The feedback session felt rushed and incomplete.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The team collaboration was excellent on this project.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The project timeline was unrealistic and caused stress.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The leadership displayed today was inspiring and motivating.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The meeting lacked direction and clear objectives.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the quick response to my query.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a lack of follow-up on the issues discussed.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The report was thorough and very well-prepared.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The analysis provided was superficial and unconvincing.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The customer support team was very helpful and patient.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "I felt the support team was unresponsive and dismissive.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The website is user-friendly and easy to navigate.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The website is confusing and difficult to use.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The updates made to the system are very beneficial.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The recent changes to the system have caused many issues.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I enjoyed the interactive elements of the training module.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The training module was dull and unengaging.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The event was well-organized and enjoyable.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The event was chaotic and poorly managed.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the transparency in the communication.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The communication was vague and left many questions unanswered.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The support provided was exceptional and timely.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The support was slow and not very helpful.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The collaborative effort on this project was outstanding.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a noticeable lack of teamwork on this project.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The creative approach taken was very refreshing.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The approach taken was outdated and uninspired.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The process improvements have made a significant difference.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The new process is cumbersome and inefficient.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The initiative shown by the team was commendable.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a distinct lack of initiative from the team.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The presentation was engaging and very informative.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The presentation was boring and lacked useful information.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the detailed feedback provided.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The feedback given was too vague to be useful.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The team showed great resilience and adaptability.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The team struggled to adapt to the new changes.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The customer service experience was very pleasant.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The customer service experience was frustrating and unhelpful.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The feedback received was constructive and valuable.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The feedback was overly critical and not helpful.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The level of professionalism was very high.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a noticeable lack of professionalism.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The training materials were well-prepared and comprehensive.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The training materials were incomplete and confusing.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The project exceeded all expectations.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The project fell short of expectations.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "I appreciate the extra effort put in by the team.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a lack of effort and commitment.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The support resources provided were very helpful.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The support resources were inadequate and hard to understand.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The leadership demonstrated was inspiring.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The leadership was lacking in direction and vision.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The innovation shown was very impressive.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The approach was too traditional and lacked innovation.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The collaboration on this project was excellent.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "There was a lack of collaboration among team members.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The solution provided was effective and efficient.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The solution was ineffective and inefficient.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The approach taken was very strategic and well-planned.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The planning was poor and lacked strategic direction.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The initiative was very well-received and successful.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The initiative failed to meet its objectives.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The new strategy has proven to be very effective.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The new strategy has not been effective.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The feedback provided was very actionable.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The feedback provided was not actionable.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The overall experience was very positive and rewarding.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The overall experience was negative and frustrating.",
+          "sentiment": "negative"
+        },
+        {
+          "content": "The report provided clear and useful insights.",
+          "sentiment": "positive"
+        },
+        {
+          "content": "The report lacked clarity and useful information.",
+          "sentiment": "negative"
+        }
+      
   
 ]
