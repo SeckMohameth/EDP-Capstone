@@ -19,7 +19,7 @@ function QuestionForm() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({newQuestion}),
+        body: JSON.stringify(newQuestion),
       });
       if (response.ok) {
         console.log("question submitted");

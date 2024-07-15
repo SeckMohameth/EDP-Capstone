@@ -17,6 +17,8 @@ function EmployeeHome() {
     setCurrentForm(formname)
   };
 
+  console.log('Feedback state:', feedback);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -44,31 +46,35 @@ function EmployeeHome() {
 
   return (
     <div className="employee-home">
-      <Nav />
-      <div className="content">
-        <h1>Employee Dashboard</h1>
-        <h3>Your manager is: </h3>
+    <Nav />
+    <div className="content">
+      <h1>Employee Dashboard</h1>
+      <h3>Your manager is: {user.managerEmail} </h3>
 
-        <div className="form-toggle">
-          <button onClick={() => handleToggle('feedback')}>Feedback</button>
-          <button onClick={() => handleToggle('question')}>Question</button>
-        </div>
+      <div className="form-toggle">
+        <button onClick={() => handleToggle('feedback')}>Feedback</button>
+        <button onClick={() => handleToggle('question')}>Question</button>
+      </div>
 
-        {currentForm === 'feedback' && <FeedbackForm/>}
-        {currentForm === 'question' && <QuestionForm/>}
+      {currentForm === 'feedback' && <FeedbackForm/>}
+      {currentForm === 'question' && <QuestionForm/>}
 
-        <h2>Past Submitted responses</h2>
-        <div className="feedback-list">
-          {feedback.map((feedback) => (
+      <h2>Past Submitted responses</h2>
+      <div className="feedback-list">
+        {feedback.length > 0 ? (
+          feedback.map((feedbackItem) => (
             <FeedbackCard
-              key={feedback._id}
-              content={feedback.content}
-              date={feedback.date}
+              key={feedbackItem._id}
+              content={feedbackItem.content}
+              date={feedbackItem.date}
             />
-          ))}
-        </div>
+          ))
+        ) : (
+          <p>No feedback available</p>
+        )}
       </div>
     </div>
+  </div>
   );
 }
 
