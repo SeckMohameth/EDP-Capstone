@@ -79,6 +79,20 @@ function EmployeeHome() {
         ) : (
           <p>No feedback available</p>
         )}
+
+        {questions.length > 0 ? (
+          questions.map((feedbackItem) => (
+            <FeedbackCard
+              key={feedbackItem._id}
+              feedback={feedbackItem}
+              // id={feedbackItem._id}
+              // content={feedbackItem.content}
+              // date={feedbackItem.date}
+            />
+          ))
+        ) : (
+          <p>No feedback available</p>
+        )}
       </div>
     </div>
   </div>
