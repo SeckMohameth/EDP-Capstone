@@ -1,9 +1,10 @@
 from flask import Flask, request, jsonify
-
+from flask_cors import CORS, cross_origin
 import pickle
 import pandas as pd
 
 app = Flask(__name__)
+CORS(app)
 
 #load the model from disk
 model_file_name = "model.pkl"  # replace with the actual model file name from the comments
@@ -19,7 +20,7 @@ def greet():
 def predict():
     #get the request data
     data = request.get_json(force=True)
-
+    print(data)
     if isinstance(data, dict):
         data = [data]
 
