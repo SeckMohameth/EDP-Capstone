@@ -20,11 +20,11 @@ function FeedbackCard({content, date, id}) {
   const handleReplySubmit = async (e) => {
     e.preventDefault();
     
-    console.log("reply submitted:" + reply)
+    console.log("reply submitted:" + reply);
 
     const newReply = {
       response: reply
-    }
+    };
 
     try {
       let reply = await fetch(`http://localhost:3000/feedback/reply/${id}`, {
@@ -44,12 +44,9 @@ function FeedbackCard({content, date, id}) {
         setShowReplyInput(false);
       }
     } catch (error) {
-      log.error("Error submitting response:", error)
+      log.error("Error submitting response:", error);
     }
-
   };
-
-
 
   return (
     <div className='card'>
@@ -88,7 +85,7 @@ function FeedbackCard({content, date, id}) {
         )}
     </div>
     
-  )
+  );
 }
 
-export default FeedbackCard
+export default FeedbackCard;

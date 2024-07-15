@@ -51,20 +51,18 @@ function EmployeeHome() {
 
   return (
     <div className="employee-home">
-    <Nav />
-    <div className="content">
-      <h1>Employee Dashboard</h1>
-      <h3>Your manager is: {user.managerEmail} </h3>
+      <Nav />
+      <div className="content">
+        <h1>Employee Dashboard</h1>
+        <h3>Your manager is: {user.managerEmail}</h3>
 
       <div className="form-toggle">
         <button onClick={() => handleToggle('feedback')}>Feedback</button>
         <button onClick={() => handleToggle('question')}>Question</button>
       </div>
 
-
-      {currentForm === 'feedback' && <FeedbackForm/>}
-      {currentForm === 'question' && <QuestionForm/>}
-
+      {currentForm === 'feedback' && <FeedbackForm user={user}/>}
+      {currentForm === 'question' && <QuestionForm user={user}/>}
 
       <h2>Past Submitted responses</h2>
       <div className="feedback-list">

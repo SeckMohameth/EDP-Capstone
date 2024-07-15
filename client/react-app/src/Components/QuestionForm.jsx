@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './QuestionForm.css'
 
-function QuestionForm() {
+function QuestionForm(props) {
   let [question, setQuestion] = useState("") 
 
   const handlesubmit = async (e) => {
@@ -9,6 +9,7 @@ function QuestionForm() {
     console.log(question);
 
     const newQuestion = {
+      employeeEmail: props.user.email,
       content: question,
       date: Date.now(),
     }

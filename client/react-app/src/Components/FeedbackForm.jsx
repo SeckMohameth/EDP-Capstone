@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './FeedbackForm.css'
 
-function FeedbackForm() {
+function FeedbackForm(props) {
     let [feedback, setFeedback] = useState("")
 
     const handlesubmit = async (e) => {
@@ -9,6 +9,7 @@ function FeedbackForm() {
         console.log(feedback);
 
         const newFeedback = {
+          managerEmail: props.user.managerEmail,
           content: feedback,
           date: Date.now(),
         }
