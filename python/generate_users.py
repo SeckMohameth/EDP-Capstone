@@ -10,7 +10,7 @@ users = []
 for i in range(1, NUM_ROWS + 1):
     name = f"user{i}"
     email = f"user{i}@email.com"
-    password = 12345
+    password = "12345"
     isManager = True if random.randint(0, 1) > .5 else False
     if (not isManager):
         managerEmail = "manager@email.com"
