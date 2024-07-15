@@ -19,8 +19,8 @@ function DataAnalysis() {
       if (response.ok) {
         console.log(sentiment);
         const result = await response.json();
-        setSentiment(result.prediction[0]); // Accessing the first element of the prediction list
-        alert(`Sentiment: ${result.prediction[0]}`);
+        setSentiment(result.sentiment); // Accessing the first element of the prediction list
+        alert(`Sentiment: ${result.sentiment}`);
       } else {
         alert("Error analyzing sentiment");
       }
