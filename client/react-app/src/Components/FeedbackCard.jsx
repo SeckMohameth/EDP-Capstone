@@ -1,11 +1,20 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import "./FeedbackCard.css"
 
 
-function FeedbackCard({content, date}) {
+function FeedbackCard({content, date, id}) {
   const [showReplyInput, setShowReplyInput] = useState(false);
   const [reply, setReply] = useState('');
   const [replies, setReplies] = useState([]);
+
+
+  useEffect(() => {
+    fetch(`http://localhost:3000/feedback/${id}`)
+      .then(res => res.json())
+      .then(data => setReplies(data.replies || []))
+      .catch(err => console.error(err));
+  }, [id]);
+
 
 //submitting a reply
   const handleReplySubmit = async (e) => {
@@ -18,7 +27,7 @@ function FeedbackCard({content, date}) {
     }
 
     try {
-      let reply = await fetch("http://localhost:3000/", {
+      let reply = await fetch(`http://localhost:3000/feedback/reply/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -26,10 +35,13 @@ function FeedbackCard({content, date}) {
         body: JSON.stringify(newReply),
       }); 
 
+   
 
       if (reply.ok) {
         console.log("reply submitted");
+        setReplies([...replies, newReply]);
         setReply(""); // Clear the form after submission
+        setShowReplyInput(false);
       }
     } catch (error) {
       log.error("Error submitting response:", error)
@@ -69,7 +81,7 @@ function FeedbackCard({content, date}) {
             <h4>Replies:</h4>
             <ul>
               {replies.map((reply, index) => (
-                <li key={index}>{reply}</li>
+                <li key={index}>{reply.response}</li>
               ))}
             </ul>
           </div>

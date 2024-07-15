@@ -248,3 +248,62 @@ app.get('*', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+
+
+
+
+
+
+
+
+
+// ====== reply routes ====== //
+
+app.put("/feedback/reply/:id", async (req, res) => {
+    try {
+        const { id } = req.params;
+        const newReply = req.body;
+        const filter = {_id: new ObjectId(id)}
+        const updateDoc = {
+            $push: { replies: newReply }
+        };
+
+        const client = await MongoClient.connect(url);
+        const db = client.db(dbName);
+        const collection = db.collection(feedbackCollection);
+        await collection.updateOne(filter, updateDoc);
+        res.status(200).send({
+            status: "success",
+            data: newReply,
+            message: "Reply added successfully."
+        });
+    } catch (err) {
+        console.error("Error:", err);
+        res.status(500).send("Error adding reply");
+    }
+});
+
+// Add a reply to questions
+app.put("/questions/reply/:id", async (req, res) => {
+    try {
+        const { id } = req.params;
+        const newReply = req.body;
+        const filter = { _id: new ObjectId(id) };
+        const updateDoc = {
+            $push: { replies: newReply }
+        };
+        const client = await MongoClient.connect(url);
+        const db = client.db(dbName);
+        const collection = db.collection(questionsCollection);
+        await collection.updateOne(filter, updateDoc);
+        res.status(200).send({
+            status: "success",
+            data: newReply,
+            message: "Reply added successfully."
+        });
+    } catch (err) {
+        console.error("Error:", err);
+        res.status(500).send("Error adding reply");
+    }
+});

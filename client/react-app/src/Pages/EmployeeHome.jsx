@@ -72,6 +72,7 @@ function EmployeeHome() {
           feedback.map((feedbackItem) => (
             <FeedbackCard
               key={feedbackItem._id}
+              id={feedbackItem._id}
               content={feedbackItem.content}
               date={feedbackItem.date}
             />
