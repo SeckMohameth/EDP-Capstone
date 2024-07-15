@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './FeedbackForm.css'
 
-function FeedbackForm() {
+function FeedbackForm(props) {
     let [feedback, setFeedback] = useState("")
 
     const handlesubmit = async (e) => {
@@ -9,7 +9,8 @@ function FeedbackForm() {
         console.log(feedback);
 
         const newFeedback = {
-          content: feedback,
+          managerEmail: props.user.managerEmail,
+          feedback: feedback,
           date: Date.now(),
         }
         
@@ -19,7 +20,7 @@ function FeedbackForm() {
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify({newFeedback}),
+            body: JSON.stringify(newFeedback),
           });
           if (response.ok) {
             console.log("feedback submitted");

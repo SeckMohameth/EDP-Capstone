@@ -52,23 +52,22 @@ function EmployeeHome() {
       <Nav />
       <div className="content">
         <h1>Employee Dashboard</h1>
-        <h3>Your manager is: </h3>
+        <h3>Your manager is: {user.managerEmail}</h3>
 
         <div className="form-toggle">
           <button onClick={() => handleToggle('feedback')}>Feedback</button>
           <button onClick={() => handleToggle('question')}>Question</button>
         </div>
 
-        {currentForm === 'feedback' && <FeedbackForm />}
-        {currentForm === 'question' && <QuestionForm />}
+        {currentForm === 'feedback' && <FeedbackForm user={user}/>}
+        {currentForm === 'question' && <QuestionForm user={user}/>}
 
         <h2>Past Submitted responses</h2>
         <div className="feedback-list">
           {feedback.map((feedback) => (
             <FeedbackCard
               key={feedback._id}
-              content={feedback.content}
-              date={feedback.date}
+              data={feedback}
             />
           ))}
         </div>

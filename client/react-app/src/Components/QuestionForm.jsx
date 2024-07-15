@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './QuestionForm.css'
 
-function QuestionForm() {
+function QuestionForm(props) {
   let [question, setQuestion] = useState("") 
 
   const handlesubmit = async (e) => {
@@ -9,7 +9,8 @@ function QuestionForm() {
     console.log(question);
 
     const newQuestion = {
-      content: question,
+      employeeEmail: props.user.email,
+      question: question,
       date: Date.now(),
     }
     
@@ -19,7 +20,7 @@ function QuestionForm() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({newQuestion}),
+        body: JSON.stringify(newQuestion),
       });
       if (response.ok) {
         console.log("question submitted");
