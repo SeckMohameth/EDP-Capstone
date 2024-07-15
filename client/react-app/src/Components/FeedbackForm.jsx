@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
+import './FeedbackForm.css'
 
 function FeedbackForm() {
     let [feedback, setFeedback] = useState("")
-    
 
     const handlesubmit = async (e) => {
         e.preventDefault()
@@ -11,40 +11,38 @@ function FeedbackForm() {
         const newFeedback = {
           content: feedback,
           date: Date.now(),
-
         }
-        // logic for feedback submission here
-      try {
-        let response = await fetch('http://localhost:3000/feedback', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({newFeedback}),
-        });
-        if (response.ok) {
-          console.log("feedback submitted");
-        }
-      } catch(error) {
-        console.error('Error:', error);
-      }
         
+        try {
+          let response = await fetch('http://localhost:3000/feedback', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({newFeedback}),
+          });
+          if (response.ok) {
+            console.log("feedback submitted");
+            setFeedback(""); // Clear the form after submission
+          }
+        } catch(error) {
+          console.error('Error:', error);
+        }
     } 
 
   return (
-    <div>
+    <div className="feedback-form">
         <form onSubmit={handlesubmit}>
-            <label>Submit feedback</label><br/>
+            <label htmlFor="feedback">Submit feedback</label>
             <textarea 
-            type='text' 
-            name='postContent'
-            rows={6}
-            cols={50}
-            placeholder='I have feedback regarding the following...'
-            value={feedback}
-            onChange={(e => setFeedback(e.target.value))}
-            /><br/>
-            <input type='submit'/>
+              id="feedback"
+              name='postContent'
+              rows={6}
+              placeholder='I have feedback regarding the following...'
+              value={feedback}
+              onChange={(e => setFeedback(e.target.value))}
+            />
+            <button type='submit'>Submit Feedback</button>
         </form>
     </div>
   )
