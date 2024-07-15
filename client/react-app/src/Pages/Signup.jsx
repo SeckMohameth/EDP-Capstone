@@ -13,7 +13,7 @@ function Signup() {
 
     const { login } = useAuth();
     const navigate = useNavigate();
-    
+
     const handleCheckboxChange = (event) => {
         setIsManager(event.target.checked);
     };
@@ -27,7 +27,7 @@ function Signup() {
             isManager: !isManager, // Note: We're inverting this because the checkbox is for "I am an employee"
             managerEmail
         };
-        
+
         try {
             const response = await fetch(`http://localhost:3000/signup`, {
                 method: "POST",
@@ -36,27 +36,28 @@ function Signup() {
                 },
                 body: JSON.stringify(newUser)
             });
-    
+
             if (!response.ok) {
                 throw new Error(`HTTP error posting new employee, status: ${response.status}`);
             }
-    
+
             const data = await response.json();
             console.log(data);
             console.log("user registered");
-    
+
             // Log in the user
             await login(email, password);
-    
+
             // Navigate based on user type
-            if (isManager) {
-                navigate("/employee"); // If they checked "I am an employee"
-            } else {
-                navigate("/manager"); // If they didn't check "I am an employee"
+            if (!isManager) {
+                navigate("/manager");
             }
-        } catch(err){
+            else {
+                navigate("/employee");
+            }
+        } catch (err) {
             console.error(err);
-            
+
         }
     };
 
@@ -101,7 +102,7 @@ function Signup() {
 
                     <div className="checkbox-group">
                         <label>
-                            <input 
+                            <input
                                 type="checkbox"
                                 checked={isManager}
                                 onChange={handleCheckboxChange}
