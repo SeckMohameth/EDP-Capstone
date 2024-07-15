@@ -7,6 +7,7 @@ import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import RequireAuth from "./Components/RequireAuth";
 import { AuthProvider } from "./hooks/AuthContext";
+import DataAnalysis from "./Pages/DataAnalysis";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/data-analysis" element={<DataAnalysis />} />
           <Route path="/employee" element={
             <RequireAuth>
               <EmployeeHome />
