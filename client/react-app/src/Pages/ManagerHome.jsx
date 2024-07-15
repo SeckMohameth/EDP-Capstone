@@ -41,6 +41,7 @@ function ManagerHome() {
         <button onClick={() => handleToggle('feedback')}>Feedback</button>
         <button onClick={() => handleToggle('questions')}>Questions</button>
       </div>
+      <h2>Employee Submissions</h2>
       <div className="content">
         {currentCategory === 'feedback' && 
           feedback.map((item) => (
