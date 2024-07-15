@@ -1,0 +1,79 @@
+body, #root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .login-page-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+  }
+  
+  .login-page-image-container {
+    flex: 1;
+    background-image: url('https://images.unsplash.com/photo-1554232456-8727aae0cfa4?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
+  .login-page-form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    color: black;
+  }
+  
+  .login-page-form-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: black;
+  }
+  
+  .login-page-form-container form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-page-form-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: black;
+  }
+  
+  .login-page-form-container input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+  }
+  
+  .login-page-form-container button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-page-form-container p {
+    margin-top: 1rem;
+    color: black;
+  }
+  
+  .login-page-form-container a {
+    color: black;
+    text-decoration: underline;
+  }

@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import FeedbackForm from '../Components/FeedbackForm';
-import QuestionFrom from '../Components/QuestionForm';
+import QuestionForm from '../Components/QuestionForm';
 import { useAuth } from '../hooks/AuthContext';
+import FeedbackCard from '../Components/FeedbackCard';
+import Nav from '../Components/Nav';
+import './EmployeeHome.css';
 
 function EmployeeHome() {
   const { user } = useAuth();
@@ -39,19 +42,32 @@ function EmployeeHome() {
     fetchData();
   }, []);
 
-
   return (
-    <div>
-      <h1>Employee Dashboard</h1>
-      <h3>Your manager is: </h3>
+    <div className="employee-home">
+      <Nav />
+      <div className="content">
+        <h1>Employee Dashboard</h1>
+        <h3>Your manager is: </h3>
 
-      <button onClick={() => handleToggle('feedback')}>Feedback</button>
-      <button onClick={() => handleToggle('question')}>Question</button>
+        <div className="form-toggle">
+          <button onClick={() => handleToggle('feedback')}>Feedback</button>
+          <button onClick={() => handleToggle('question')}>Question</button>
+        </div>
 
-      {currentForm === 'feedback' && <FeedbackForm/>}
-      {currentForm === 'question' && <QuestionFrom/>}
+        {currentForm === 'feedback' && <FeedbackForm/>}
+        {currentForm === 'question' && <QuestionForm/>}
 
-      <h2>Past Submitted responses</h2>
+        <h2>Past Submitted responses</h2>
+        <div className="feedback-list">
+          {feedback.map((feedback) => (
+            <FeedbackCard
+              key={feedback._id}
+              content={feedback.content}
+              date={feedback.date}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

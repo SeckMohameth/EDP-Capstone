@@ -1,14 +1,63 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import FeedbackCard from '../Components/FeedbackCard';
+import './ManagerHome.css';
 
 function ManagerHome() {
-  return (
-    <div>
-      <h1>Manager Dashboard</h1>
-      <h2>All questions and feeback submitted below</h2>
+  const [feedback, setFeedback] = useState([]);
+  const [questions, setQuestions] = useState([]);
+  const [currentCategory, setCurrentCategory] = useState('feedback');
 
-      {/* Show submitted feedback here as a list*/}
-      <FeedbackCard/>
+  const handleToggle = (category) => {
+    setCurrentCategory(category);
+  };
+
+  const fetchFeedback = () => {
+    fetch("http://localhost:3000/feedback")
+      .then((res) => res.json())
+      .then((data) => {
+        setFeedback(data);
+      });
+  };
+
+  const fetchQuestions = () => {
+    fetch("http://localhost:3000/questions")
+      .then((res) => res.json())
+      .then((data) => {
+        setQuestions(data);
+      });
+  };
+
+  useEffect(fetchFeedback, []);
+  useEffect(fetchQuestions, []);
+
+  return (
+    <div className="manager-home">
+      <h1>Manager Dashboard</h1>
+      <p>Select which submissions to view</p>
+      <div className="form-toggle">
+        <button onClick={() => handleToggle('feedback')}>Feedback</button>
+        <button onClick={() => handleToggle('questions')}>Questions</button>
+      </div>
+      <div className="content">
+        {currentCategory === 'feedback' && 
+          feedback.map((item) => (
+            <FeedbackCard
+              key={item._id}
+              content={item.content}
+              date={item.date}
+            />
+          ))
+        }
+        {currentCategory === 'questions' && 
+          questions.map((item) => (
+            <FeedbackCard
+              key={item._id}
+              content={item.content}
+              date={item.date}
+            />
+          ))
+        }
+      </div>
     </div>
   );
 }

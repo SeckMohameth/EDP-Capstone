@@ -1,12 +1,10 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../hooks/AuthContext";
 import { useNavigate } from "react-router-dom";
-import Signup from "./Signup";
+import "./Login.css"
 
 function Login() {
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { login } = useAuth();
@@ -21,33 +19,35 @@ function Login() {
   };
 
   return (
-    <div>
-      <h1>Login here</h1>
-      <form onSubmit={handleSubmit}>
-        <label>Email</label><br />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-          placeholder="Please enter your email"
-        /><br />
+    <div className="login-page-container">
+      <div className="login-page-image-container"></div>
+      <div className="login-page-form-container">
+        <h1>Login here</h1>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            placeholder="Please enter your email"
+          />
 
-        <label>Password</label><br />
-        <input
-          type="password"
-          id="password"
-          name="password"
-          value={password}
-          onChange={e => setPassword(e.target.value)}
-          placeholder="enter password"
-        /><br />
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+            placeholder="Enter password"
+          />
 
-        <input type="submit" id="submit" />
-      </form>
-
-      <p>Don't have an account? Signup <Link to="signup">here!</Link></p>
+          <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? Signup <Link to="signup">here!</Link></p>
+      </div>
     </div>
   );
 }

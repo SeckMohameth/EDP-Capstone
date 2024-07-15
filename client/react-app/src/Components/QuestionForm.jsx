@@ -1,29 +1,51 @@
 import React, { useState } from 'react'
+import './QuestionForm.css'
 
-function QuestionFrom() {
+function QuestionForm() {
   let [question, setQuestion] = useState("") 
 
   const handlesubmit = async (e) => {
     e.preventDefault()
-  }
+    console.log(question);
+
+    const newQuestion = {
+      content: question,
+      date: Date.now(),
+    }
+    
+    try {
+      let response = await fetch('http://localhost:3000/questions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({newQuestion}),
+      });
+      if (response.ok) {
+        console.log("question submitted");
+        setQuestion(""); // Clear the form after submission
+      }
+    } catch(error) {
+      console.error('Error:', error);
+    }
+  } 
 
   return (
-    <div>
+    <div className="question-form">
         <form onSubmit={handlesubmit}>
-            <label>Submit a question</label><br/>
+            <label htmlFor="question">Submit a question</label>
             <textarea 
-            type='text' 
-            name='postContent'
-            rows={6}
-            cols={50}
-            placeholder='I have a question regarding the following...'
-            value={question}
-            onChange={(e => setQuestion(e.target.value))}
-            /><br/>
-            <input type='submit'/>
+              id="question"
+              name='postContent'
+              rows={6}
+              placeholder='I have a question regarding the following...'
+              value={question}
+              onChange={(e => setQuestion(e.target.value))}
+            />
+            <button type='submit'>Submit Question</button>
         </form>
     </div>
   )
 }
 
-export default QuestionFrom
+export default QuestionForm
