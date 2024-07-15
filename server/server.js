@@ -240,24 +240,6 @@ app.post('/login', async (req, res) => {
     }
 });
 
-// Redirect route
-app.get('*', async (req, res) => {
-    res.json(null);
-});
-
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
-
-
-
-
-
-
-
-
-
-
 // ====== reply routes ====== //
 
 //add a reply to feedback
@@ -307,4 +289,13 @@ app.put("/questions/reply/:id", async (req, res) => {
         console.error("Error:", err);
         res.status(500).send("Error adding reply");
     }
+});
+
+// Redirect route
+app.get('*', async (req, res) => {
+    res.json(null);
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
