@@ -6,8 +6,8 @@ import pandas as pd
 app = Flask(__name__)
 
 #load the model from disk
-model_file_name = 'model.pkl'  # replace with the actual model file name from the comments
-with open(' model.pkl', 'rb') as file: # add name of pickle file here before the .pkl
+model_file_name = "model.pkl"  # replace with the actual model file name from the comments
+with open(model_file_name, 'rb') as file: # add name of pickle file here before the .pkl
     model = pickle.load(file)
 
 #testing route

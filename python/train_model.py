@@ -20,7 +20,7 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_
 model = Pipeline(
     steps=[
         (
-            "count_vectorizer", CountVectorizer()
+            "count_vectorizer", CountVectorizer(lowercase=True)
         ),
         (
             "naive_bayes", MultinomialNB()
