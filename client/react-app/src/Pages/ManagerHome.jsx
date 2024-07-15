@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import FeedbackCard from '../Components/FeedbackCard';
+import QuestionCard from '../Components/QuestionCard';
 import './ManagerHome.css';
 import Nav from '../Components/Nav';
 
@@ -56,9 +57,9 @@ function ManagerHome() {
         }
         {currentCategory === 'questions' && 
           questions.map((item) => (
-            <FeedbackCard
+            <QuestionCard
               key={item._id}
-              feedback={item}
+              question={item}
             />
           ))
         }

@@ -7,15 +7,6 @@ function FeedbackCard({feedback}) {
   const [reply, setReply] = useState('');
   const [replies, setReplies] = useState(feedback.replies || []);
 
-
-  // useEffect(() => {
-  //   fetch(`http://localhost:3000/feedback/${id}`)
-  //     .then(res => res.json())
-  //     .then(data => setReplies(data.replies || []))
-  //     .catch(err => console.error(err));
-  // }, [id]);
-
-
 //submitting a reply
   const handleReplySubmit = async (e) => {
     e.preventDefault();
@@ -26,20 +17,20 @@ function FeedbackCard({feedback}) {
       response: reply
     };
 
+    const updatedReplies = [...replies, newReply]
+
     try {
-      let reply = await fetch(`http://localhost:3000/feedback/reply/${feedback._id}`, {
+      let reply = await fetch(`http://localhost:3000/feedback/${feedback._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(newReply),
+        body: JSON.stringify(updatedReplies),
       }); 
-
-   
 
       if (reply.ok) {
         console.log("reply submitted");
-        setReplies([...replies, newReply]);
+        setReplies(updatedReplies);
         setReply(""); // Clear the form after submission
         setShowReplyInput(false);
       }

@@ -132,8 +132,8 @@ app.post("/feedback", async (req, res) => {
 app.put("/feedback/:id", async (req, res) => {
     try {
         const { id } = req.params;
-        const newData = req.body;
-        const filter = { id: id };
+        const newData = {replies: req.body};
+        const filter = { _id: new ObjectId(id) };
         const updateDoc = {
             $set: newData
         }
@@ -141,6 +141,7 @@ app.put("/feedback/:id", async (req, res) => {
         const db = client.db(dbName);
         const collection = db.collection(feedbackCollection);
         const result = await collection.updateOne(filter, updateDoc)
+        console.log(result)
         res.status(200).send({
             status: "success",
             data: newData,
