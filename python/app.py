@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS, cross_origin
+from flask_cors import CORS
 import pickle
 import pandas as pd
 
@@ -20,15 +20,14 @@ def greet():
 def predict():
     #get the request data
     data = request.get_json(force=True)
-    print(data)
     if isinstance(data, dict):
         data = [data]
 
     # make prediction
     prediction = model.predict(pd.DataFrame(data))
-
+    response = {"sentiment": prediction[0]}
     # Return the prediction result
-    return jsonify(prediction=prediction.tolist())
+    return response
 
 
 
