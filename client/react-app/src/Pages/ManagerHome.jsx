@@ -3,7 +3,6 @@ import FeedbackCard from '../Components/FeedbackCard';
 import './ManagerHome.css';
 import Nav from '../Components/Nav';
 
-
 function ManagerHome() {
   const [feedback, setFeedback] = useState([]);
   const [questions, setQuestions] = useState([]);
@@ -18,7 +17,8 @@ function ManagerHome() {
       .then((res) => res.json())
       .then((data) => {
         setFeedback(data);
-      });
+      })
+      .catch((error) => console.error("Error fetching feedback:", error));
   };
 
   const fetchQuestions = () => {
@@ -26,11 +26,14 @@ function ManagerHome() {
       .then((res) => res.json())
       .then((data) => {
         setQuestions(data);
-      });
+      })
+      .catch((error) => console.error("Error fetching questions:", error));
   };
 
-  useEffect(fetchFeedback, []);
-  useEffect(fetchQuestions, []);
+  useEffect(() => {
+    fetchFeedback();
+    fetchQuestions();
+  }, []);
 
   return (
     <div className="manager-home">
@@ -47,8 +50,7 @@ function ManagerHome() {
           feedback.map((item) => (
             <FeedbackCard
               key={item._id}
-              content={item.content}
-              date={item.date}
+              feedback={item}
             />
           ))
         }
@@ -56,8 +58,7 @@ function ManagerHome() {
           questions.map((item) => (
             <FeedbackCard
               key={item._id}
-              content={item.content}
-              date={item.date}
+              feedback={item}
             />
           ))
         }

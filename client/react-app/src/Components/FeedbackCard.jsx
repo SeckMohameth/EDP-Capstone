@@ -2,18 +2,18 @@ import React, {useState, useEffect} from 'react'
 import "./FeedbackCard.css"
 
 
-function FeedbackCard({content, date, id}) {
+function FeedbackCard({feedback}) {
   const [showReplyInput, setShowReplyInput] = useState(false);
   const [reply, setReply] = useState('');
-  const [replies, setReplies] = useState([]);
+  const [replies, setReplies] = useState(feedback.replies || []);
 
 
-  useEffect(() => {
-    fetch(`http://localhost:3000/feedback/${id}`)
-      .then(res => res.json())
-      .then(data => setReplies(data.replies || []))
-      .catch(err => console.error(err));
-  }, [id]);
+  // useEffect(() => {
+  //   fetch(`http://localhost:3000/feedback/${id}`)
+  //     .then(res => res.json())
+  //     .then(data => setReplies(data.replies || []))
+  //     .catch(err => console.error(err));
+  // }, [id]);
 
 
 //submitting a reply
@@ -27,7 +27,7 @@ function FeedbackCard({content, date, id}) {
     };
 
     try {
-      let reply = await fetch(`http://localhost:3000/feedback/reply/${id}`, {
+      let reply = await fetch(`http://localhost:3000/feedback/reply/${feedback._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -44,16 +44,16 @@ function FeedbackCard({content, date, id}) {
         setShowReplyInput(false);
       }
     } catch (error) {
-      log.error("Error submitting response:", error);
+      console.error("Error submitting response:", error);
     }
   };
 
   return (
     <div className='card'>
         <div className='card-content'>
-            <p>{content}</p>
+            <p>{feedback.content}</p>
             <div className='card-info'>
-            <p>{new Date(date).toLocaleDateString()}</p>
+            <p>{new Date(feedback.date).toLocaleDateString()}</p>
             
             <button onClick={() => setShowReplyInput(!showReplyInput)}>
             {showReplyInput ? 'Cancel' : 'Reply'}
