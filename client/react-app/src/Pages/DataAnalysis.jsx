@@ -13,7 +13,7 @@ function DataAnalysis() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ content: comment }),
+        body: JSON.stringify({ comment: comment }),
       });
       
       if (response.ok) {
