@@ -13,27 +13,29 @@ function ManagerHome() {
     setCurrentCategory(category);
   };
 
-  const fetchFeedback = () => {
-    fetch("http://localhost:3000/feedback")
-      .then((res) => res.json())
-      .then((data) => {
-        setFeedback(data);
-      })
-      .catch((error) => console.error("Error fetching feedback:", error));
-  };
-
-  const fetchQuestions = () => {
-    fetch("http://localhost:3000/questions")
-      .then((res) => res.json())
-      .then((data) => {
-        setQuestions(data);
-      })
-      .catch((error) => console.error("Error fetching questions:", error));
-  };
-
   useEffect(() => {
-    fetchFeedback();
-    fetchQuestions();
+    const fetchData = async () => {
+      try {
+        const feedbackResponse = await fetch("http://localhost:3000/feedback");
+        if (!feedbackResponse.ok) {
+          throw new Error("Feedback could not be fetched")
+        }
+        const feedbackResponseJson = await feedbackResponse.json();
+        setFeedback(feedbackResponseJson);
+        console.log(feedback);
+
+        const questionsResponse = await fetch("http://localhost:3000/questions");
+        if (!questionsResponse.ok) {
+          throw new Error("Questions could not be fetched")
+        }
+        const questionsResponseJson = await questionsResponse.json();
+        setQuestions(questionsResponseJson);
+        console.log(questions);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    fetchData();
   }, []);
 
   return (

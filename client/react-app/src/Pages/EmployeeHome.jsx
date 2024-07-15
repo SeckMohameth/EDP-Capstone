@@ -4,6 +4,7 @@ import FeedbackForm from '../Components/FeedbackForm';
 import QuestionForm from '../Components/QuestionForm';
 import { useAuth } from '../hooks/AuthContext';
 import FeedbackCard from '../Components/FeedbackCard';
+import QuestionCard from '../Components/QuestionCard';
 import Nav from '../Components/Nav';
 import './EmployeeHome.css';
 
@@ -81,17 +82,17 @@ function EmployeeHome() {
         )}
 
         {questions.length > 0 ? (
-          questions.map((feedbackItem) => (
-            <FeedbackCard
-              key={feedbackItem._id}
-              feedback={feedbackItem}
+          questions.map((item) => (
+            <QuestionCard
+              key={item._id}
+              question={item}
               // id={feedbackItem._id}
               // content={feedbackItem.content}
               // date={feedbackItem.date}
             />
           ))
         ) : (
-          <p>No feedback available</p>
+          <p>No questions available</p>
         )}
       </div>
     </div>

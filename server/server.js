@@ -145,7 +145,7 @@ app.put("/feedback/:id", async (req, res) => {
         res.status(200).send({
             status: "success",
             data: newData,
-            message: "User updated successfully."
+            message: "Feedback updated successfully."
         });
     } catch (err) {
         console.error("Error:", err);
@@ -201,8 +201,8 @@ app.post("/questions", async (req, res) => {
 app.put("/questions/:id", async (req, res) => {
     try {
         const { id } = req.params;
-        const newData = req.body;
-        const filter = { id: id };
+        const newData = {replies: req.body};
+        const filter = { _id: new ObjectId(id) };
         const updateDoc = {
             $set: newData
         }
@@ -210,10 +210,11 @@ app.put("/questions/:id", async (req, res) => {
         const db = client.db(dbName);
         const collection = db.collection(questionsCollection);
         const result = await collection.updateOne(filter, updateDoc)
+        console.log(result)
         res.status(200).send({
             status: "success",
             data: newData,
-            message: "User updated successfully."
+            message: "Question updated successfully."
         });
     } catch (err) {
         console.error("Error:", err);
@@ -241,56 +242,57 @@ app.post('/login', async (req, res) => {
     }
 });
 
-// ====== reply routes ====== //
+// // ====== reply routes ====== //
+// //=== Replaced with updated put routes ===//
+// //=== /feedback/:id and /questions/:id ===//
+// //add a reply to feedback
+// app.put("/feedback/reply/:id", async (req, res) => {
+//     try {
+//         const { id } = req.params;
+//         const newReply = req.body;
+//         const filter = {_id: new ObjectId(id)}
+//         const updateDoc = {
+//             $push: { replies: newReply }
+//         };
 
-//add a reply to feedback
-app.put("/feedback/reply/:id", async (req, res) => {
-    try {
-        const { id } = req.params;
-        const newReply = req.body;
-        const filter = {_id: new ObjectId(id)}
-        const updateDoc = {
-            $push: { replies: newReply }
-        };
+//         const client = await MongoClient.connect(url);
+//         const db = client.db(dbName);
+//         const collection = db.collection(feedbackCollection);
+//         await collection.updateOne(filter, updateDoc);
+//         res.status(200).send({
+//             status: "success",
+//             data: newReply,
+//             message: "Reply added successfully."
+//         });
+//     } catch (err) {
+//         console.error("Error:", err);
+//         res.status(500).send("Error adding reply");
+//     }
+// });
 
-        const client = await MongoClient.connect(url);
-        const db = client.db(dbName);
-        const collection = db.collection(feedbackCollection);
-        await collection.updateOne(filter, updateDoc);
-        res.status(200).send({
-            status: "success",
-            data: newReply,
-            message: "Reply added successfully."
-        });
-    } catch (err) {
-        console.error("Error:", err);
-        res.status(500).send("Error adding reply");
-    }
-});
-
-// Add a reply to questions
-app.put("/questions/reply/:id", async (req, res) => {
-    try {
-        const { id } = req.params;
-        const newReply = req.body;
-        const filter = { _id: new ObjectId(id) };
-        const updateDoc = {
-            $push: { replies: newReply }
-        };
-        const client = await MongoClient.connect(url);
-        const db = client.db(dbName);
-        const collection = db.collection(questionsCollection);
-        await collection.updateOne(filter, updateDoc);
-        res.status(200).send({
-            status: "success",
-            data: newReply,
-            message: "Reply added successfully."
-        });
-    } catch (err) {
-        console.error("Error:", err);
-        res.status(500).send("Error adding reply");
-    }
-});
+// // Add a reply to questions
+// app.put("/questions/reply/:id", async (req, res) => {
+//     try {
+//         const { id } = req.params;
+//         const newReply = req.body;
+//         const filter = { _id: new ObjectId(id) };
+//         const updateDoc = {
+//             $push: { replies: newReply }
+//         };
+//         const client = await MongoClient.connect(url);
+//         const db = client.db(dbName);
+//         const collection = db.collection(questionsCollection);
+//         await collection.updateOne(filter, updateDoc);
+//         res.status(200).send({
+//             status: "success",
+//             data: newReply,
+//             message: "Reply added successfully."
+//         });
+//     } catch (err) {
+//         console.error("Error:", err);
+//         res.status(500).send("Error adding reply");
+//     }
+// });
 
 // Redirect route
 app.get('*', async (req, res) => {
