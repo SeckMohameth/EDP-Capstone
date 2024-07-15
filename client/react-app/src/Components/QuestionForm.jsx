@@ -10,7 +10,7 @@ function QuestionForm(props) {
 
     const newQuestion = {
       employeeEmail: props.user.email,
-      question: question,
+      content: question,
       date: Date.now(),
     }
     

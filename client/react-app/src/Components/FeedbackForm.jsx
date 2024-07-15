@@ -10,7 +10,7 @@ function FeedbackForm(props) {
 
         const newFeedback = {
           managerEmail: props.user.managerEmail,
-          feedback: feedback,
+          content: feedback,
           date: Date.now(),
         }
         
