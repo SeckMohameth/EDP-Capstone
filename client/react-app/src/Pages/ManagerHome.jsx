@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import FeedbackCard from '../Components/FeedbackCard';
 import './ManagerHome.css';
+import Nav from '../Components/Nav';
+
 
 function ManagerHome() {
   const [feedback, setFeedback] = useState([]);
@@ -32,6 +34,7 @@ function ManagerHome() {
 
   return (
     <div className="manager-home">
+      <Nav />
       <h1>Manager Dashboard</h1>
       <p>Select which submissions to view</p>
       <div className="form-toggle">
