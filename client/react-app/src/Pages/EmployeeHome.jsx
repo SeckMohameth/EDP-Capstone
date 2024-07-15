@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Navigate } from "react-router-dom";
 import FeedbackForm from '../Components/FeedbackForm';
 import QuestionForm from '../Components/QuestionForm';
 import { useAuth } from '../hooks/AuthContext';
@@ -42,6 +43,10 @@ function EmployeeHome() {
     fetchData();
   }, []);
 
+  if (user.isManager) {
+    return <Navigate to="/manager" replace />;
+  }
+
   return (
     <div className="employee-home">
       <Nav />
@@ -54,8 +59,8 @@ function EmployeeHome() {
           <button onClick={() => handleToggle('question')}>Question</button>
         </div>
 
-        {currentForm === 'feedback' && <FeedbackForm/>}
-        {currentForm === 'question' && <QuestionForm/>}
+        {currentForm === 'feedback' && <FeedbackForm />}
+        {currentForm === 'question' && <QuestionForm />}
 
         <h2>Past Submitted responses</h2>
         <div className="feedback-list">
