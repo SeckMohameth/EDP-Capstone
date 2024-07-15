@@ -19,7 +19,7 @@ function FeedbackForm() {
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify({newFeedback}),
+            body: JSON.stringify(newFeedback),
           });
           if (response.ok) {
             console.log("feedback submitted");
